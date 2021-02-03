@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SimpleForm</string>
+
+    <string-array name="Genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Details"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp"
+            >
+        </TextView>
+        
+        <EditText
+            android:layout_width="190dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:hint="Full Name"
+            ></EditText>
+        <EditText
+            android:layout_width="190dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmail"
+            android:hint="emailadd@email.com"
+            ></EditText>
+        <EditText
+            android:layout_width="190dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/etMobileNumber"
+            android:hint="Mobile Number"
+            ></EditText>
+        <EditText
+            android:layout_width="190dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDOB"
+            android:hint="Date of Birth"
+            android:onClick="onClick"
+            ></EditText>
+
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Age"
+            android:textAlignment="center"
+            android:textSize="18sp"></TextView>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:spinnerMode="dialog"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            ></Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
